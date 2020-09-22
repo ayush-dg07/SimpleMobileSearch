@@ -1,0 +1,14 @@
+drop table if exists mobile;
+create table mobile(id int not null auto_increment, brand text, model text, ram varchar(10), color text, primary key(id));
+insert into mobile(brand,model,ram,color) values ('Samsung','Galaxy Note 6','4GB','Red');
+insert into mobile(brand,model,ram,color) values ('Samsung','Galaxy Note 6','4GB','Blue');
+insert into mobile(brand,model,ram,color) values ('Samsung','Galaxy Note 6','3GB','Blue');
+insert into mobile(brand,model,ram,color) values ('Samsung','Galaxy Note 6','3GB','Black');
+insert into mobile(brand,model,ram,color) values ('OnePlus','7T','3GB','Black');
+insert into mobile(brand,model,ram,color) values ('OnePlus','7T Pro','4GB','Black');
+insert into mobile(brand,model,ram,color) values ('OnePlus','7T Pro','4GB','Red');
+insert into mobile(brand,model,ram,color) values ('OnePlus','7T','3GB','Red');
+insert into mobile(brand,model,ram,color) values ('Apple','iPhone 7','3GB','Red');
+insert into mobile(brand,model,ram,color) values ('Apple','iPhone 8','4GB','Black');
+insert into mobile(brand,model,ram,color) values ('Samsung','Galaxy J6','2GB','White');
+insert into mobile(brand,model,ram,color) values ('Samsung','Galaxy J6','2GB','Blue');

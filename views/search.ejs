@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style> body {background-color: lightseagreen; text-align: center;} h1 {color: blue;} p {border: 1px solid powderblue;padding: 30px;} li {border: 1px solid powderblue;padding: 30px;} </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results:</title>
+</head>
+<body>
+    <h2>Search for a mobile</h2> <br><br>
+        <form action="/">
+            Put spaces between keywords<br>
+            <input type="text" name="term" placeholder="Name, brand, colour, RAM" ><br><br>
+            <input type="submit" value="Search">
+          </form> 
+        <br><% if(mobiles.length==0){ %> No Results found <% } %> <br>
+        <% if (mobiles.length >0) { %> Results: <br> 
+        <ol>
+        <% mobiles.forEach( function(item) {%>
+            <li>
+                Brand: <%= item.brand %>  <br>
+                Model: <%= item.model%> <br>
+                Ram: <%= item.ram%> <br>
+                Color: <%= item.color%> 
+            </li>
+        <% }); %>  
+        <% } %>
+    </ol>
+</body>
+</html>
